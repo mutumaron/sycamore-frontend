@@ -3,34 +3,37 @@ import Image from "next/image";
 
 const MiddleHero = () => {
   return (
-    <section className="flex flex-col gap-10 lg:flex-row lg:pt-20 px-36">
+    <section className="flex flex-col gap-10 lg:flex-row lg:pt-20 px-12 lg:px-36">
       <div className="flex flex-col gap-5 flex-1">
         <h3 className="font-bold text-xl lg:w-3/4">
-          OUR MISSION:TO BOOST YOUR ONLINE PRESENCE
+          <span className="text-primary">OUR MISSION: </span>
+          DRIVING SUSTAINABLE MOBILITY FORWARD
         </h3>
         <p>
-          Our team of skilled professionals is dedicated to transforming your
-          vision into a dynamic online presence, whether it’s through an
-          engaging website or a user-friendly mobile app. We believe that
-          technology should work seamlessly to enhance your business, and we’re
-          here to make that happen.
+          At Sycamore, our mission is to accelerate the adoption of clean and
+          innovative mobility solutions that empower individuals, businesses,
+          and communities. We believe that the future of transportation must be
+          sustainable, affordable, and accessible to all.
         </p>
         <p>
-          Our approach to web development combines creativity with technical
-          expertise, ensuring that every website we create is not only visually
-          stunning but also highly functional. From responsive designs to
-          interactive features, we build websites that captivate your audience
-          and drive results.
+          Through Sycamore Ride, we deliver efficient electric bikes designed
+          for everyday use; with Sycamore Power, we build the clean energy
+          infrastructure that fuels them. Our ecosystem is supported by Sycamore
+          Data, where AI-driven insights optimize operations, and Sycamore
+          Finance, which ensures that sustainable mobility is within everyone’s
+          reach.
         </p>
         <p>
-          With a track record of successful projects and satisfied clients, we
-          are confident in our ability to deliver results that exceed your
-          expectations. Whether you need a robust website, a cutting-edge mobile
-          app,
+          We combine innovation, technology, and financial accessibility to
+          create a holistic solution for the mobility challenges of today and
+          tomorrow. By rethinking how we move, power, and finance
+          transportation, Sycamore is committed to reducing emissions and
+          shaping a greener future.
         </p>
         <p>
-          In the mobile arena, we craft intuitive apps that offer exceptional
-          user experiences across various devices and platforms.{" "}
+          Together, we are not just building vehicles and infrastructure—we are
+          building a movement towards smarter, cleaner, and more inclusive
+          mobility.
         </p>
       </div>
       <div className="flex-1 flex justify-end bg-white">

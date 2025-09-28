@@ -14,6 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import Link from "next/link";
+import { FullNavMenu } from "./FullNavMenu";
 
 const NavBar = () => {
   const { resolvedTheme } = useTheme();
@@ -23,7 +24,7 @@ const NavBar = () => {
     setMounted(true);
   }, []);
   return (
-    <nav className="flex justify-between items-center shadow-xs py-4 px-36">
+    <nav className="md:flex justify-between items-center shadow-xs py-4 px-36 hidden">
       <div className="flex items-center justify-between gap-1">
         {mounted && (
           <Image
@@ -51,27 +52,9 @@ const NavBar = () => {
           />
         )}
       </div>
-      <NavbarMenu />
-      <NavigationMenu viewport={false}>
-        <NavigationMenuList className="flex gap-4 items-center">
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <Link href="/login">Login</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <Link href="/sign-up">Sign Up</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
+      {/* <NavbarMenu /> */}
+      <FullNavMenu />
+
       <ModeToggle />
     </nav>
   );

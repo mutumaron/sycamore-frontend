@@ -6,82 +6,94 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { BookType, CodeXml, DatabaseZap, TabletSmartphone } from "lucide-react";
+import {
+  Bike,
+  BookType,
+  BrainCircuit,
+  ChartCandlestick,
+  CodeXml,
+  DatabaseZap,
+  EvCharger,
+  TabletSmartphone,
+} from "lucide-react";
 
 const Features = () => {
   return (
-    <section className="flex flex-col gap-10 lg:py-20 mx-36">
+    <section className="flex flex-col gap-10 lg:py-20 px-12 lg:px-36">
       <h1 className="font-bold text-2xl">WHAT WE OFFER</h1>
       <div className="grid gap-5 lg:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle>
-              <CodeXml />
+              <EvCharger />
             </CardTitle>
-            <CardDescription>Web Development</CardDescription>
+            <CardDescription>Sycamore Power</CardDescription>
           </CardHeader>
           <CardContent>
             <p>
-              At Onyx Devs, we specialize in cutting-edge web development,
-              delivering tailored digital solutions that drive business success.
-              Our expert team blends innovative design with robust functionality
-              to create responsive, user-friendly websites and applications,
-              ensuring a seamless online experience that meets the unique needs
-              of each client.
+              Sycamore Power is dedicated to building a sustainable future by
+              harnessing clean energy solutions that fuel both mobility and
+              communities. From renewable energy generation to smart charging
+              infrastructure, we deliver reliable, eco-conscious power that
+              supports electric mobility and beyond. Our mission is to make
+              green energy accessible, scalable, and central to everyday life.
             </p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
             <CardTitle>
-              <TabletSmartphone />
+              <Bike />
             </CardTitle>
-            <CardDescription>Mobile Development</CardDescription>
+            <CardDescription>Sycamore Ride</CardDescription>
           </CardHeader>
           <CardContent>
             <p>
-              We excel in mobile development, crafting intuitive and
-              high-performance apps for iOS and Android platforms. Our team of
-              skilled developers combines creativity with technical expertise to
-              build mobile solutions that enhance user engagement, streamline
-              processes, and provide a seamless experience across devices,
-              helping businesses thrive in the mobile-first world.
+              At Sycamore Ride, we are redefining urban mobility through
+              innovative electric bikes designed for efficiency, reliability,
+              and sustainability. Our e-bikes provide clean, affordable
+              transport options that reduce carbon emissions while offering
+              riders a modern, convenient way to move through cities. Whether
+              for personal use, delivery services, or shared mobility, Sycamore
+              Ride ensures every journey is eco-friendly and empowering.
             </p>
           </CardContent>
         </Card>{" "}
         <Card>
           <CardHeader>
             <CardTitle>
-              <DatabaseZap />
+              <ChartCandlestick />
             </CardTitle>
-            <CardDescription>Database Design</CardDescription>
+            <CardDescription>Sycamore Finance</CardDescription>
           </CardHeader>
           <CardContent>
             <p>
-              Ourr database design services focus on creating efficient,
-              scalable, and secure data structures tailored to your business
-              needs. We specialize in designing databases that optimize
-              performance, ensure data integrity, and support seamless data
-              retrieval. Our expert team ensures your data is well-organized,
-              easily accessible, and ready to drive informed decision-making.
+              Sycamore Finance makes e-mobility accessible through flexible
+              financial solutions that meet diverse customer needs. From
+              affordable loans and rental options to direct sales, we empower
+              individuals and businesses to embrace electric mobility without
+              financial barriers. Our tailored financing plans, supported by
+              intelligent risk assessment, ensure sustainable ownership and
+              long-term value for every customer.
             </p>
           </CardContent>
         </Card>{" "}
         <Card>
           <CardHeader>
             <CardTitle>
-              <BookType />
+              <BrainCircuit />
             </CardTitle>
-            <CardDescription>Technical Writing</CardDescription>
+            <CardDescription>Sycamore Data</CardDescription>
           </CardHeader>
           <CardContent>
             <p>
-              Our technical writing services provide clear, concise, and
-              accurate documentation tailored to your audience. We specialize in
-              creating user manuals, API documentation, and technical guides
-              that bridge the gap between complex technology and user
-              understanding. Our skilled writers ensure your content is
-              informative, accessible, and aligned with industry standards.
+              At Sycamore Data, we unlock the power of information with advanced
+              AI-driven analytics tailored for the e-mobility ecosystem. By
+              transforming raw data from vehicles, users, and energy systems
+              into actionable insights, we help optimize operations, predict
+              trends, and drive smarter decisions. Our solutions empower
+              businesses, governments, and individuals to embrace data-led
+              growth with confidence.
             </p>
           </CardContent>
         </Card>

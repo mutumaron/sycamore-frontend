@@ -14,7 +14,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="px-36 pt-12">
+    <footer className="lg:px-36 pt-12 px-12">
       <div className="flex flex-col gap-10 justify-between items-center pb-5 md:flex-row">
         <div className="flex flex-col gap-10 items-center md:flex-row">
           {mounted && (
@@ -36,12 +36,7 @@ const Footer = () => {
             <p className="font-semibold cursor-pointer hover:underline">
               Solutions
             </p>
-            <p className="font-semibold cursor-pointer hover:underline">
-              Resources
-            </p>
-            <p className="font-semibold cursor-pointer hover:underline">
-              Enterprise
-            </p>
+
             <p className="font-semibold cursor-pointer hover:underline">
               Pricing
             </p>
@@ -58,108 +53,64 @@ const Footer = () => {
         </div>
       </div>
       <Separator />
-      <div className="pt-10 pb-5 grid grid-cols-2 gap-10 justify-between md:flex md:flex-row">
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-primary">Platform</h1>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Platform Overview
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Integration
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Extensions
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Connected Data
-          </p>
+      <div className="flex justify-center items-center md:justify-between">
+        <div className="pt-10 pb-5 grid grid-cols-2 gap-10 items-center justify-between md:flex md:flex-row md:justify-start md:gap-20">
+          <div className="flex flex-col gap-2">
+            <h1 className="font-semibold text-primary">Platform</h1>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Platform Overview
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Integration
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Extensions
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Connected Data
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1 className="font-semibold text-primary">Solutions</h1>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Product
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Marketing
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Sales
+            </p>
+            <p className="cursor-pointer text-muted-foreground hover:underline">
+              Connected Data
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-primary">Solutions</h1>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Product
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Marketing
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Sales
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Connected Data
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-primary">Platform</h1>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Learn
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Events
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Demos
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Webinars
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-primary">Platform</h1>
-
-          <p className="cursor-pointer text-muted-foreground  hover:underline">
-            Resources
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Partners
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Services
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Community
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-semibold text-primary">Platform</h1>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Company
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            About
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Careers
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Blog
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Status
-          </p>
-          <p className="cursor-pointer text-muted-foreground hover:underline">
-            Newsroom
-          </p>
+        <div className="hidden md:block">
+          <Image
+            src={"/images/logo-4.png"}
+            height={300}
+            width={300}
+            alt="Sycamore.co"
+            className="rounded-md"
+          />
         </div>
       </div>
       <Separator />
-      <div className="flex py-4 gap-3">
-        <p className="cursor-pointer text-muted-foreground hover:underline">
-          &copy; 2025 Sycamore,co.
-        </p>
-        <p className="cursor-pointer text-muted-foreground hover:underline">
-          Security
-        </p>
-        <p className="cursor-pointer text-muted-foreground hover:underline">
-          Privacy
-        </p>
-        <p className="cursor-pointer text-muted-foreground hover:underline">
-          Terms
-        </p>
-        <p className="cursor-pointer text-muted-foreground hover:underline">
-          Cookie Preference
-        </p>
-      </div>
+
+      <p className="cursor-pointer py-4 text-center text-muted-foreground">
+        &copy; 2025 Sycamore,co.{" "}
+        <span className="hover:text-primary">
+          <a
+            href="https://onyx-devs.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Powered by ONYX-DEVs
+          </a>
+        </span>
+      </p>
     </footer>
   );
 };

@@ -5,8 +5,8 @@ import { Linkedin } from "lucide-react";
 
 const Team = () => {
   return (
-    <div className="px-5 py-12 lg:px-36">
-      <h1 className="py-10 font-bold text-2xl lg:text-center lg:text-3xl">
+    <div className="px-12 py-12 lg:px-36">
+      <h1 className="py-10 font-bold text-primary text-2xl lg:text-center lg:text-3xl">
         Our Team
       </h1>
       <div className="grid gap-10 lg:grid-cols-2">
@@ -21,7 +21,7 @@ const Team = () => {
           <div className="flex items-center gap-10 pt-4 justify-between px-5">
             <div>
               <h1 className="font-bold text-lg">Lewis Minda</h1>
-              <p className="text-sm text-gray-500">Founder and CEO</p>
+              <p className="text-sm text-gray-500">Founder & CEO</p>
             </div>
             <Linkedin size={30} />
           </div>

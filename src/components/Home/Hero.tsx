@@ -15,7 +15,7 @@ const Hero = () => {
         priority
         className="object-cover object-center -z-10"
       />
-      <div className="mt-5 flex flex-col items-center gap-5 mx-36">
+      <div className="flex flex-col items-center gap-5 lg:mx-36">
         <OperationCard
           title="Start Your EV journey with Us"
           color="text-primary"
@@ -36,7 +36,7 @@ const Hero = () => {
             Get Your E-Bike Today
           </Button>
         </div>
-        <div className="flex justify-between w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-6 justify-between w-full lg:px-0 px-12">
           <Card>
             <CardContent>
               <Zap className="text-primary" />
