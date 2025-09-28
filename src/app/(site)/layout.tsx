@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sycamore Home",
-  description: "Get yourself an affordable Electric Boda Boda",
+  title: "Sycamore | Home",
+  description:
+    "E-Mobility solutions for ownership and rentals.Get yourself an affordable Electric Boda Boda",
+  icons: {
+    icon: "/images/bolt.svg",
+    shortcut: "/images/bolt.svg",
+  },
 };
 
 export default function RootLayout({

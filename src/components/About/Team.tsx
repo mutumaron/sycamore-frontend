@@ -46,10 +46,10 @@ const Team = () => {
         </Card>
         <Card className="border-none shadow-none flex flex-col p-0 pb-5">
           <Image
-            src={"/images/lewis.jpeg"}
+            src={"/images/person.svg"}
             alt="Leaders"
-            width={400}
-            height={400}
+            width={100}
+            height={100}
             className="w-full rounded-md"
           />
           <div className="flex items-center gap-10 pt-4 justify-between px-5">
@@ -64,10 +64,10 @@ const Team = () => {
         </Card>
         <Card className="border-none shadow-none flex flex-col p-0 pb-5">
           <Image
-            src={"/images/ronny-1.jpg"}
+            src={"/images/person.svg"}
             alt="Leaders"
-            width={400}
-            height={400}
+            width={100}
+            height={100}
             className="w-full rounded-md"
           />
           <div className="flex items-center gap-10 pt-4 justify-between px-5 ">

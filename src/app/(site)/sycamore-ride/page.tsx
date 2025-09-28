@@ -2,7 +2,14 @@ import Hero from "@/components/Ride/Hero";
 import RideCard from "@/components/Ride/RideCard";
 import RideTabs from "@/components/Ride/RideTabs";
 import { BriefcaseBusiness, Handshake, UserPen } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Sycamore Ride | Electric Bike Ownership & Rentals",
+  description:
+    "Choose between bike ownership or flexible rental options with Sycamore Ride. Affordable, sustainable, and backed by clean energy.",
+};
 
 const RidePage = () => {
   return (

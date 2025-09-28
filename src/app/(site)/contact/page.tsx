@@ -1,7 +1,14 @@
 import { ContactForm } from "@/components/Contact/ContactForm";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Sycamore",
+  description:
+    "Get in touch with Sycamore for support, inquiries, or partnership opportunities.",
+};
 
 const ContactPage = () => {
   return (
