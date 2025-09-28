@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import MobileNavlinks from "./MobileNavlinks";
 import { ModeToggle } from "./ModeToggle";
+import Link from "next/link";
 
 const MobileNavbar = () => {
   const { resolvedTheme } = useTheme();
@@ -27,7 +28,7 @@ const MobileNavbar = () => {
 
   return (
     <>
-      <nav className="flex md:hidden fixed top-0 left-0 w-full z-50 justify-between items-center px-4 py-3 bg-background shadow-sm">
+      <nav className="flex md:hidden fixed top-0 left-0 w-full z-50 justify-between items-center px-12 py-3 bg-background shadow-sm">
         {/* Hamburger menu button */}
         <button
           onClick={toggleSidebar}
@@ -37,7 +38,7 @@ const MobileNavbar = () => {
         </button>
 
         {/* Logo and Agency Name */}
-        <div className="flex items-center gap-2">
+        <Link href={"/"} className="flex items-center gap-2">
           {mounted && (
             <Image
               src={
@@ -63,7 +64,7 @@ const MobileNavbar = () => {
               alt="Sycamore Logo Zap"
             />
           )}
-        </div>
+        </Link>
 
         <ModeToggle />
       </nav>

@@ -36,9 +36,9 @@ const MiddleHero = () => {
           mobility.
         </p>
       </div>
-      <div className="flex-1 flex justify-end bg-white">
+      <div className="flex-1 flex justify-end">
         <Image
-          src={"/images/motor-rider.svg"}
+          src={"/images/bike-3.svg"}
           alt="Sycamore Rider"
           height={500}
           width={500}

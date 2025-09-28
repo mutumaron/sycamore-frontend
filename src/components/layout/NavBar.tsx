@@ -6,13 +6,6 @@ import React, { useEffect, useState } from "react";
 import { NavbarMenu } from "./NavbarMenu";
 import { useTheme } from "next-themes";
 import { ModeToggle } from "./ModeToggle";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "../ui/navigation-menu";
 import Link from "next/link";
 import { FullNavMenu } from "./FullNavMenu";
 
@@ -25,7 +18,7 @@ const NavBar = () => {
   }, []);
   return (
     <nav className="md:flex justify-between items-center shadow-xs py-4 px-36 hidden">
-      <div className="flex items-center justify-between gap-1">
+      <Link href={"/"} className="flex items-center justify-between gap-1">
         {mounted && (
           <Image
             src={
@@ -51,7 +44,7 @@ const NavBar = () => {
             alt="Sycamore Logo Zap"
           />
         )}
-      </div>
+      </Link>
       {/* <NavbarMenu /> */}
       <FullNavMenu />
 
