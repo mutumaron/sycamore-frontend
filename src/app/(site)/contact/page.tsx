@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Sycamore",
+  title: "Contact Us | Don't be shy talk to us for any Inquiries",
   description:
     "Get in touch with Sycamore for support, inquiries, or partnership opportunities.",
 };

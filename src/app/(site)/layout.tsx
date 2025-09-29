@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sycamore | Home",
+  title: "Explore the Sycamore Platform| Official website for Sycamore.Co",
   description:
     "E-Mobility solutions for ownership and rentals.Get yourself an affordable Electric Boda Boda",
   icons: {

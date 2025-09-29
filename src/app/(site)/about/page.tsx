@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "About Us | Sycamore",
+  title: "About Us | Get to know us.",
   description:
     "Learn more about Sycamore, our vision for clean mobility, and how we are transforming the future of transport in Africa.",
 };
