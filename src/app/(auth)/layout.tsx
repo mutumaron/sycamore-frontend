@@ -2,13 +2,9 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Sycamore | Register",
+  title: "Join us at Sycamore | Register today",
   description:
     "Register With us and get E-Mobility solutions for ownership and rentals.",
-  icons: {
-    icon: "/images/bolt.svg",
-    shortcut: "/images/bolt.svg",
-  },
 };
 
 export default function AuthLayout({
