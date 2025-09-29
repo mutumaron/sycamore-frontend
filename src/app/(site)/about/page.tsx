@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 px-8 lg:px-36">
       <Hero />
       <Values />
       <Team />

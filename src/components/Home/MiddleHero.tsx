@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MiddleHero = () => {
   return (
-    <section className="flex flex-col gap-10 lg:flex-row lg:pt-20 px-12 lg:px-36">
+    <section className="flex flex-col gap-10 lg:flex-row lg:pt-20">
       <div className="flex flex-col gap-5 flex-1">
         <h3 className="font-bold text-xl lg:w-3/4">
           <span className="text-primary">OUR MISSION: </span>

@@ -5,7 +5,7 @@ import { Linkedin } from "lucide-react";
 
 const Team = () => {
   return (
-    <div className="px-12 py-12 lg:px-36">
+    <div className="py-12 ">
       <h1 className="py-10 font-bold text-primary text-2xl lg:text-center lg:text-3xl">
         Our Team
       </h1>

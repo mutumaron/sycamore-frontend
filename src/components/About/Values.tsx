@@ -4,7 +4,7 @@ import SingleValue from "./SingleValue";
 
 const Values = () => {
   return (
-    <div className="flex flex-col gap-10  px-12 py-5 lg:py-12 lg:px-36 lg:grid lg:grid-cols-3 lg:gap-12">
+    <div className="flex flex-col gap-10 py-5 lg:py-12 lg:grid lg:grid-cols-3 lg:gap-12">
       <h1 className="text-4xl font-bold">
         Our <span className="text-primary">Values</span>
       </h1>

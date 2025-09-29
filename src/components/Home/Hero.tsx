@@ -4,6 +4,7 @@ import OperationCard from "../layout/OperationCard";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { BrainCircuit, GlobeLock, Sprout, Zap } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -15,12 +16,12 @@ const Hero = () => {
         priority
         className="object-cover object-center -z-10"
       />
-      <div className="flex flex-col items-center gap-5 lg:mx-36">
+      <div className="flex flex-col items-center gap-5">
         <OperationCard
           title="Start Your EV journey with Us"
           color="text-primary"
         />
-        <div className="mt-6 flex flex-col items-center gap-5 px-12">
+        <div className="mt-6 flex flex-col items-center gap-5">
           <h1 className="font-bold text-3xl text-center max-w-3xl">
             The Future of <span className="text-primary">Mobility</span>, Built
             on <span className="text-primary">OwnerShip</span> .Own Your Ride.
@@ -32,11 +33,13 @@ const Hero = () => {
             service businesess with eliminated fuel costs that turn payments
             into guaranteed savings towards your business.
           </p>
-          <Button className="rounded-md mt-4 cursor-pointer">
-            Get Your E-Bike Today
-          </Button>
+          <Link href={"/sycamore-ride"}>
+            <Button className="rounded-md mt-4 cursor-pointer">
+              Get Your E-Bike Today
+            </Button>
+          </Link>
         </div>
-        <div className="grid lg:grid-cols-4 grid-cols-2 gap-6 justify-between w-full lg:px-0 px-12">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-6 justify-between w-full">
           <Card>
             <CardContent>
               <Zap className="text-primary" />

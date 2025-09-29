@@ -7,7 +7,7 @@ import IndividualTab from "./IndividualTab";
 const RideTabs = () => {
   return (
     <Tabs defaultValue="ownership">
-      <TabsList>
+      <TabsList className="flex flex-wrap mb-12 md:mb-8 gap-3">
         <TabsTrigger value="ownership">Self Ownership</TabsTrigger>
         <TabsTrigger value="business">Business Rental</TabsTrigger>
         <TabsTrigger value="individual">Individual Rental</TabsTrigger>

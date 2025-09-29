@@ -19,7 +19,7 @@ import {
 
 const Features = () => {
   return (
-    <section className="flex flex-col gap-10 lg:py-20 px-12 lg:px-36">
+    <section className="flex flex-col gap-10 lg:py-20">
       <h1 className="font-bold text-2xl">WHAT WE OFFER</h1>
       <div className="grid gap-5 lg:grid-cols-2">
         <Card>

@@ -1,4 +1,4 @@
-import { GalleryVerticalEnd } from "lucide-react";
+"use client";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -6,11 +6,20 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function SignupForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form>
@@ -21,12 +30,18 @@ export function SignupForm({
               className="flex flex-col items-center gap-2 font-medium"
             >
               <div className="flex size-8 items-center justify-center rounded-md">
-                <Image
-                  src={"/images/bolt.svg"}
-                  height={70}
-                  width={70}
-                  alt="logo"
-                />
+                {mounted && (
+                  <Image
+                    src={
+                      resolvedTheme === "dark"
+                        ? "/images/bolt-dark.svg"
+                        : "/images/bolt.svg"
+                    }
+                    height={70}
+                    width={70}
+                    alt="Sycamore Logo Zap"
+                  />
+                )}
               </div>
               <span className="sr-only">Sycamore Inc.</span>
             </a>
@@ -76,7 +91,7 @@ export function SignupForm({
             </div>
           </div>
           <Button type="submit" className="w-full">
-            Login
+            Sign Up
           </Button>
           <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
             <span className="bg-background text-muted-foreground relative z-10 px-2">

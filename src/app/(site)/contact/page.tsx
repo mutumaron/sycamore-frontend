@@ -12,34 +12,34 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <div className="px-12 flex flex-col gap-10 lg:flex-row lg:items-start lg:px-36">
+    <div className="px-8 flex flex-col gap-10 lg:flex-row lg:items-start lg:px-36">
       <div className="flex flex-col gap-7 flex-1">
-        <h1 className="text-5xl font-bold">
+        <h1 className="lg:text-5xl font-bold text-3xl ">
           Schedule a time with the Sycamore team to:{" "}
         </h1>
         <div className="flex flex-col gap-5">
-          <div className="flex gap-2">
-            <div className="bg-primary rounded-full p-1">
-              <Check size={15} color="white" />
+          <div className="flex gap-2 items-center">
+            <div className="flex items-center justify-center bg-primary rounded-full h-5 w-5 p-1">
+              <Check size={20} />
             </div>
             <p className="text-sm text-muted-foreground">
               Get a live walkthrough of the Sycamore Platform
             </p>
           </div>
-          <div className="flex gap-2">
-            <div className="bg-primary rounded-full p-1">
-              <Check size={15} color="white" />
+          <div className="flex gap-2 items-center">
+            <div className="flex items-center justify-center bg-primary rounded-full h-5 w-5 p-1">
+              <Check size={20} />
             </div>
             <p className="text-sm text-muted-foreground">
               Get a live walkthrough of the Sycamore Platform
             </p>
-          </div>
-          <div className="flex gap-2">
-            <div className="bg-primary rounded-full p-1">
-              <Check size={15} color="white" />
+          </div>{" "}
+          <div className="flex gap-2 items-center">
+            <div className="flex items-center justify-center bg-primary rounded-full h-5 w-5 p-1">
+              <Check size={20} />
             </div>
             <p className="text-sm text-muted-foreground">
-              Get a live walkthrough of the Onyx-Homes platform
+              Get a live walkthrough of the Sycamore Platform
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const ContactPage = () => {
           </span>
         </h1>
       </div>
-      <Card className="p-5">
+      <Card className="p-5 flex-1">
         <ContactForm />
       </Card>
     </div>

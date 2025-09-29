@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const RidePage = () => {
   return (
-    <div className="space-y-16 lg:px-36 px-12">
+    <div className="space-y-16 lg:px-36 px-8">
       <Hero />
       <section className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10">
         <RideCard

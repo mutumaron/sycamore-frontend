@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Separator } from "../ui/separator";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const Footer = () => {
   const { resolvedTheme } = useTheme();
@@ -14,7 +15,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="lg:px-36 pt-12 px-12">
+    <footer className="lg:px-36 pt-12 px-8">
       <div className="flex flex-col gap-10 justify-between items-center pb-5 md:flex-row">
         <div className="flex flex-col gap-10 items-center md:flex-row">
           {mounted && (
@@ -29,20 +30,31 @@ const Footer = () => {
               height={170}
             />
           )}
-          <div className="flex flex-wrap gap-4 md:gap-10">
-            <p className="font-semibold cursor-pointer hover:underline">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-7">
+            <Link
+              href="/"
+              className="font-semibold cursor-pointer hover:underline"
+            >
               Platform
-            </p>
-            <p className="font-semibold cursor-pointer hover:underline">
+            </Link>
+            <Link
+              href="/"
+              className="font-semibold cursor-pointer hover:underline"
+            >
               Solutions
-            </p>
-
-            <p className="font-semibold cursor-pointer hover:underline">
+            </Link>
+            <Link
+              href="/"
+              className="font-semibold cursor-pointer hover:underline"
+            >
               Pricing
-            </p>
-            <p className="font-semibold cursor-pointer hover:underline">
+            </Link>
+            <Link
+              href="/contact"
+              className="font-semibold cursor-pointer hover:underline"
+            >
               Contact Sales
-            </p>
+            </Link>
           </div>
         </div>
         <div className="flex gap-4">
@@ -54,36 +66,54 @@ const Footer = () => {
       </div>
       <Separator />
       <div className="flex justify-center items-center md:justify-between">
-        <div className="pt-10 pb-5 grid grid-cols-2 gap-10 items-center justify-between md:flex md:flex-row md:justify-start md:gap-20">
+        <div className="pt-10 pb-5 grid grid-cols-2 gap-10 items-start justify-between md:flex md:flex-row md:justify-start md:gap-20">
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold text-primary">Platform</h1>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Platform Overview
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Integration
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Extensions
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Connected Data
-            </p>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/"}
+            >
+              Overview
+            </Link>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/about"}
+            >
+              About
+            </Link>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/contact"}
+            >
+              Contact
+            </Link>
           </div>
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold text-primary">Solutions</h1>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Product
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Marketing
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Sales
-            </p>
-            <p className="cursor-pointer text-muted-foreground hover:underline">
-              Connected Data
-            </p>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/sycamore-ride"}
+            >
+              Ride
+            </Link>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/sycamore-ride"}
+            >
+              Power
+            </Link>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/sycamore-ride"}
+            >
+              Data
+            </Link>
+            <Link
+              className="cursor-pointer text-muted-foreground hover:underline"
+              href={"/sycamore-ride"}
+            >
+              Finance
+            </Link>
           </div>
         </div>
         <div className="hidden md:block">

@@ -28,7 +28,7 @@ const MobileNavbar = () => {
 
   return (
     <>
-      <nav className="flex md:hidden fixed top-0 left-0 w-full z-50 justify-between items-center px-12 py-3 bg-background shadow-sm">
+      <nav className="flex md:hidden fixed top-0 left-0 w-full z-50 justify-between items-center px-8 py-3 bg-background shadow-sm">
         {/* Hamburger menu button */}
         <button
           onClick={toggleSidebar}
