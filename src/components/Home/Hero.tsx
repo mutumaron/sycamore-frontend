@@ -9,13 +9,6 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="relative flex justify-center w-full">
-      <Image
-        src="/images/bg-hero-2.png"
-        alt="Hero background"
-        fill
-        priority
-        className="object-cover object-center -z-10"
-      />
       <div className="flex flex-col items-center gap-5">
         <OperationCard
           title="Start Your EV journey with Us"

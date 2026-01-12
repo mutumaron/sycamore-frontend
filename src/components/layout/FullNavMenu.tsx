@@ -18,28 +18,22 @@ import { Lock } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Sycamore Ride",
-    href: "/sycamore-ride",
+    title: "Sycamore Riders",
+    href: "/sycamore-riders",
     description:
       "Affordable electric bikes for clean, efficient, and reliable urban transport.",
   },
   {
-    title: "Sycamore Power",
-    href: "/",
+    title: "Sycamore Mechanics",
+    href: "/sycamore-mechanics",
     description:
       "Clean energy solutions powering sustainable mobility and communities.",
   },
   {
-    title: "Sycamore Data",
-    href: "/",
+    title: "Sycamore Partners",
+    href: "/sycamore-partners",
     description:
       "AI-powered analytics for smarter decisions in mobility, energy, and finance.",
-  },
-  {
-    title: "Sycamore Finance",
-    href: "/",
-    description:
-      "Flexible loans, rentals, and sales to make e-mobility accessible to all.",
   },
 ];
 
