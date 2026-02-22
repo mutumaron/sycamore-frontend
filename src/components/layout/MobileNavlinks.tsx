@@ -46,7 +46,7 @@ const MobileNavlinks = ({ onLinkClick }: NavProps) => {
       <li className="flex gap-5 items-center ">
         <Bike size={25} />
         <Link
-          href={"/sycamore-ride"}
+          href={"/sycamore-riders"}
           onClick={onLinkClick}
           className="font-bold text-lg hover:underline"
         >
@@ -57,11 +57,11 @@ const MobileNavlinks = ({ onLinkClick }: NavProps) => {
       <li className="flex gap-5 items-center ">
         <Cable size={25} />
         <Link
-          href={"/sycamore-ride"}
+          href={"/sycamore-mechanics"}
           onClick={onLinkClick}
           className="font-bold text-lg hover:underline"
         >
-          Sycamore Power
+          Sycamore Mechanics
         </Link>
       </li>
       <Separator />

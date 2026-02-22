@@ -36,6 +36,46 @@ export const ValuesData = [
   },
 ];
 
+export const serviceProcess = [
+  {
+    id: "1",
+    processTitle: "Rider & Fleet Onboarding",
+    processContent:
+      "Register your vehicle into the Sycamore ecosystem. Provide your details and bike specifications so our engineers can create a unique digital service profile for your machine.",
+  },
+  {
+    id: "2",
+    processTitle: "Initial Technical Audit",
+    processContent:
+      "Bring your bike in for a baseline diagnostic. We assess battery health, controller calibration, and mechanical wear to establish a customized preventative maintenance schedule.",
+  },
+  {
+    // Keeping your KES 500/day logic but reframing it as a "Service & Savings" model
+    id: "3",
+    processTitle: "The Reliability Subscription",
+    processContent:
+      "Join our sustainable service plan for KES 500 per day. KES 300 is secured in your 'Parts & Power' fund for future repairs, while KES 200 covers our professional facilitation and expert labor fees.",
+  },
+  {
+    id: "4",
+    processTitle: "Service Agreement",
+    processContent:
+      "Review our transparent Service Level Agreement (SLA). This outlines our commitment to your uptime, covering emergency repairs, battery swapping protocols, and scheduled maintenance.",
+  },
+  {
+    id: "5",
+    processTitle: "Weekly Technical Check-ups",
+    processContent:
+      "Visit our service hubs weekly for a high-priority inspection. We use specialized diagnostics to monitor battery degradation and drivetrain efficiency, preventing breakdowns before they happen.",
+  },
+  {
+    id: "6",
+    processTitle: "Optimized Riding",
+    processContent:
+      "Ride with confidence knowing your bike is backed by professional engineering. Enjoy maximum range, reduced long-term costs, and the peace of mind that comes with 24/7 technical support.",
+  },
+];
+
 export const ownershipProcess = [
   {
     id: "1",

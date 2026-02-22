@@ -7,33 +7,36 @@ const MiddleHero = () => {
       <div className="flex flex-col gap-5 flex-1">
         <h3 className="font-bold text-xl lg:w-3/4">
           <span className="text-primary">OUR MISSION: </span>
-          DRIVING SUSTAINABLE MOBILITY FORWARD
+          POWERING RELIABILITY IN EVERY RIDE
         </h3>
         <p>
-          At Sycamore, our mission is to accelerate the adoption of clean and
-          innovative mobility solutions that empower individuals, businesses,
-          and communities. We believe that the future of transportation must be
-          sustainable, affordable, and accessible to all.
+          At Sycamore Dynamics, our mission is to ensure the longevity and
+          efficiency of the electric mobility revolution. We believe that for
+          sustainable transportation to succeed, it must be supported by
+          world-class maintenance and technical expertise that keeps every
+          e-bike on the road.
         </p>
+
         <p>
-          Through Sycamore Ride, we deliver efficient electric bikes designed
-          for everyday use; with Sycamore Power, we build the clean energy
-          infrastructure that fuels them. Our ecosystem is supported by Sycamore
-          Data, where AI-driven insights optimize operations, and Sycamore
-          Finance, which ensures that sustainable mobility is within everyone’s
-          reach.
+          Through specialized technical servicing, we provide the backbone for
+          electric fleets and individual riders alike. By integrating
+          professional diagnostics with our deep understanding of power systems,
+          we eliminate downtime and ensure that electric motorcycles and bikes
+          remain a dependable, daily reality for our communities.
         </p>
+
         <p>
-          We combine innovation, technology, and financial accessibility to
-          create a holistic solution for the mobility challenges of today and
-          tomorrow. By rethinking how we move, power, and finance
-          transportation, Sycamore is committed to reducing emissions and
-          shaping a greener future.
+          We combine advanced engineering with a commitment to technical
+          excellence to solve the unique maintenance challenges of modern
+          e-mobility. By optimizing battery health, drivetrain performance, and
+          charging infrastructure, Sycamore is dedicated to reducing waste and
+          extending the lifecycle of green transportation.
         </p>
+
         <p>
-          Together, we are not just building vehicles and infrastructure—we are
-          building a movement towards smarter, cleaner, and more inclusive
-          mobility.
+          Together, we are not just fixing hardware—we are building the trust
+          and infrastructure necessary to keep the movement toward smarter,
+          cleaner, and more inclusive mobility moving forward.
         </p>
       </div>
       <div className="flex-1 flex justify-end">
