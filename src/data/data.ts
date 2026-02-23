@@ -2,37 +2,37 @@ export const ValuesData = [
   {
     id: 1,
     image: "/images/ownership.svg",
-    title: "Ownership",
+    title: "Unwavering Reliability",
     content:
-      "We hold ourselves accountable and place immense trust in each other to deliver and create impact",
+      "We understand that every minute an e-bike is off the road is lost income. We are committed to technical excellence that ensures maximum uptime for every rider.",
   },
   {
     id: 2,
     image: "/images/quality.svg",
-    title: "Quality-obsessed",
+    title: "Precision-Obsessed",
     content:
-      "Quality is in our DNA. We are obsessed with delivering the highest quality products that create value.",
+      "Engineering quality is our core. From battery cell balancing to drivetrain calibration, we obsess over the technical details that keep vehicles running at peak performance.",
   },
   {
     id: 3,
     image: "/images/experiment.svg",
-    title: "Experimentative & innovative",
+    title: "Data-Driven Innovation",
     content:
-      "We believe in constant experimentation and meaningful innovation that can revolutionize the continuous testing ecosystem.",
+      "We leverage real-time diagnostics and IoT insights to transition from reactive repairs to predictive maintenance, revolutionizing the e-mobility service ecosystem.",
   },
   {
     id: 4,
     image: "/images/agility.svg",
-    title: "Agility",
+    title: "Operational Agility",
     content:
-      "We believe in staying nimble in every area of our work - be it customer responses, delivering a product update, or executing an internal task.",
+      "E-mobility moves fast. We stay nimble to provide rapid response times, whether it's an emergency roadside repair or a critical firmware update for a fleet.",
   },
   {
     id: 5,
     image: "/images/centric.svg",
-    title: "People-centric",
+    title: "Rider-Centric Support",
     content:
-      "We embrace our individuality and work hard to create an inclusive, diverse, and open culture for each team member.",
+      "We build our services around the people who power the economy. Our culture is defined by empowering riders with the technical support and safety nets they need.",
   },
 ];
 

@@ -80,6 +80,22 @@ const Team = () => {
             <Linkedin size={30} />
           </div>
         </Card>
+        <Card className="border-none shadow-none flex flex-col p-0 pb-5">
+          <Image
+            src={"/images/person.svg"}
+            alt="Leaders"
+            width={100}
+            height={100}
+            className="w-full rounded-md"
+          />
+          <div className="flex items-center gap-10 pt-4 justify-between px-5 ">
+            <div>
+              <h1 className="font-bold text-lg">Gregory Ochieng</h1>
+              <p className="text-sm text-gray-500">Operations</p>
+            </div>
+            <Linkedin size={30} />
+          </div>
+        </Card>
       </div>
     </div>
   );

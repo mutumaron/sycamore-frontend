@@ -30,8 +30,20 @@ const components: { title: string; href: string; description: string }[] = [
       "Clean energy solutions powering sustainable mobility and communities.",
   },
   {
-    title: "Sycamore Partners",
-    href: "/sycamore-partners",
+    title: "Sycamore Dealership",
+    href: "/sycamore-dealership",
+    description:
+      "AI-powered analytics for smarter decisions in mobility, energy, and finance.",
+  },
+  {
+    title: "Sycamore Saccos",
+    href: "/sycamore-saccos",
+    description:
+      "AI-powered analytics for smarter decisions in mobility, energy, and finance.",
+  },
+  {
+    title: "Sycamore Careers",
+    href: "/sycamore-careers",
     description:
       "AI-powered analytics for smarter decisions in mobility, energy, and finance.",
   },
@@ -125,7 +137,7 @@ const ListItem = React.forwardRef<
             ref={ref}
             className={cn(
               "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-              className
+              className,
             )}
             {...props}
           >

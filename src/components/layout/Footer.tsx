@@ -15,7 +15,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="lg:px-36 pt-12 px-8">
+    <footer className="lg:px-36 md:mt-24 mt-12 px-8">
       <div className="flex flex-col gap-10 justify-between items-center pb-5 md:flex-row">
         <div className="flex flex-col gap-10 items-center md:flex-row">
           {mounted && (

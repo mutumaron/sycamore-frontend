@@ -12,17 +12,14 @@ const Hero = () => {
             Clean, Reliable, and Equitable Mobility.
           </h3>
           <p className="text-muted-foreground text-lg">
-            We saw a broken system: petrol bikes are expensive, polluting, and
-            offer riders no path to asset ownership, while Electric mobility is
-            the solution, the initial cost is too high, and existing ownership
-            paths are expensive in the long run.
+            To make electric mobility accessible and worry-free for every Kenyan
+            rider by providing affordable, reliable maintenance through a
+            trusted network of certified mechanics.
           </p>
           <p className="text-muted-foreground text-lg">
-            Sycamore solves the financing challenge first. We don't just rent
-            bikes; , we provide a transparent, risk-free managed savings
-            platform that guarantees the rider owns a valuable EV asset. We also
-            allow small delivery businesess to outsource transport services
-            while excluding fuel and maintenance costs from business owners.
+            A future where electric vehicles power Africa's roads, supported by
+            a sustainable ecosystem of skilled mechanics and accessible
+            maintenance infrastructure
           </p>
         </div>
       </div>

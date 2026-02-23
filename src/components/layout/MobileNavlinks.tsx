@@ -8,9 +8,14 @@ import {
   Cable,
   ChartCandlestick,
   Database,
+  DollarSign,
+  GraduationCap,
+  Handshake,
   Home,
+  Landmark,
   MessageCircle,
   UserLock,
+  Wrench,
 } from "lucide-react";
 
 type NavProps = {
@@ -55,7 +60,7 @@ const MobileNavlinks = ({ onLinkClick }: NavProps) => {
       </li>
       <Separator />
       <li className="flex gap-5 items-center ">
-        <Cable size={25} />
+        <Wrench size={25} />
         <Link
           href={"/sycamore-mechanics"}
           onClick={onLinkClick}
@@ -66,24 +71,35 @@ const MobileNavlinks = ({ onLinkClick }: NavProps) => {
       </li>
       <Separator />
       <li className="flex gap-5 items-center ">
-        <Database size={25} />
+        <Handshake size={25} />
         <Link
-          href={"/sycamore-ride"}
+          href={"/sycamore-dealership"}
           onClick={onLinkClick}
           className="font-bold text-lg hover:underline"
         >
-          Sycamore Data
+          Sycamore Dealership
         </Link>
       </li>
       <Separator />
       <li className="flex gap-5 items-center ">
-        <ChartCandlestick size={25} />
+        <Landmark size={25} />
         <Link
-          href={"/sycamore-ride"}
+          href={"/sycamore-saccos"}
           onClick={onLinkClick}
           className="font-bold text-lg hover:underline"
         >
-          Sycamore Finance
+          Sycamore Saccos
+        </Link>
+      </li>
+      <Separator />
+      <li className="flex gap-5 items-center ">
+        <GraduationCap size={25} />
+        <Link
+          href={"/sycamore-careers"}
+          onClick={onLinkClick}
+          className="font-bold text-lg hover:underline"
+        >
+          Sycamore Careers
         </Link>
       </li>
       <Separator />
