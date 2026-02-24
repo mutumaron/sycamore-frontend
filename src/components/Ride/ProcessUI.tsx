@@ -30,7 +30,7 @@ const ProcessUI = ({ process }: ProcessUIProps) => {
       ))}
       <div className="flex items-center gap-3">
         <Box />
-        <Link href={"/sign-up"}>
+        <Link href={"/sign-up?role=rider"} className="flex items-center gap-2">
           <Button className="cursor-pointer">
             Get started <ArrowRight />
           </Button>

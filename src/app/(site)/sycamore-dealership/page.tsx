@@ -5,6 +5,7 @@ import Hero from "@/components/Dealership/Hero";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const DataPage = () => {
@@ -24,9 +25,11 @@ const DataPage = () => {
           find anywhere else.
         </p>
 
-        <Button className="md:mt-10" size={"lg"}>
-          Apply Now - For Free ! <ArrowRight />
-        </Button>
+        <Link href={"/sign-up?role=dealership"}>
+          <Button className="md:mt-10" size={"lg"}>
+            Apply Now - For Free ! <ArrowRight />
+          </Button>
+        </Link>
       </section>
       <Features />
       <Separator />

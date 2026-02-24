@@ -9,10 +9,11 @@ import {
 } from "../ui/card";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const DealershipCard = () => {
   return (
-    <Card className="flex flex-col gap-5 items-center bg-[#1e7344] p-12  text-white  ">
+    <Card className="flex flex-col gap-5 items-center bg-primary p-12  text-white  ">
       <CardHeader className="w-full text-center">
         <CardTitle className="text-4xl font-bold">Move More Units</CardTitle>
       </CardHeader>
@@ -23,9 +24,11 @@ const DealershipCard = () => {
         </CardDescription>
       </CardContent>
       <CardFooter>
-        <Button size={"lg"}>
-          Apply as A Dealer Partner <ArrowRight />
-        </Button>
+        <Link href={"/sign-up?role=dealership"}>
+          <Button size={"lg"} className="underline text-white cursor-pointer">
+            Apply as A Dealer Partner <ArrowRight />
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

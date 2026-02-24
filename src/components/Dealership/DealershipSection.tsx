@@ -11,6 +11,7 @@ import {
   ChartColumn,
   Bike,
 } from "lucide-react";
+import Link from "next/link";
 
 const DealershipSection = () => {
   const benefits = [
@@ -71,16 +72,18 @@ const DealershipSection = () => {
             ))}
           </div>
 
-          <Button
-            size={"lg"}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold"
-          >
-            Partner as A Dealer <ArrowRight />
-          </Button>
+          <Link href={"/sign-up?role=dealership"}>
+            <Button
+              size={"lg"}
+              className="bg-primary hover:bg-primary/90 text-white font-semibold"
+            >
+              Partner as A Dealer <ArrowRight />
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side: Stats Card */}
-        <Card className="bg-[#1e7344] border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
+        <Card className="bg-primary border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
           <div className="text-center space-y-2 flex flex-col items-center">
             <Bike className="text-8xl font-black text-center" size={50} />
 

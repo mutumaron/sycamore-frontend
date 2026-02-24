@@ -5,6 +5,7 @@ import SaccosSection from "@/components/Saccos/SaccosSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -23,9 +24,11 @@ const page = () => {
           roadworthy.{" "}
         </p>
 
-        <Button className="md:mt-10" size={"lg"}>
-          Partner With Us <ArrowRight />
-        </Button>
+        <Link href={"/sign-up?role=sacco"}>
+          <Button className="md:mt-10" size={"lg"}>
+            Partner With Us <ArrowRight />
+          </Button>
+        </Link>
       </section>
       <Features />
       <Separator />

@@ -13,10 +13,10 @@ import {
   Check,
   ExternalLink,
   Handshake,
-  Link,
   UserPen,
 } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -41,10 +41,13 @@ const MechanicsPage = () => {
           transportation revolution.
         </p>
 
-        <Button className="" size={"lg"}>
-          Apply Now - For Free ! <ArrowRight />
-        </Button>
+        <Link href="/sign-up/?role=mechanic">
+          <Button className="" size={"lg"}>
+            Apply Now - For Free ! <ArrowRight />
+          </Button>
+        </Link>
       </section>
+
       <Features />
       <Card className="relative flex flex-col gap-6 py-12 overflow-hidden border-none shadow-xl min-h-[400px] justify-end bg-transparent">
         {/* The Actual Image Background */}

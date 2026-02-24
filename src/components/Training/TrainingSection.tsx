@@ -15,6 +15,7 @@ import {
   Rocket,
   CircleCheckBig,
 } from "lucide-react";
+import Link from "next/link";
 
 const TrainingSection = () => {
   const benefits = [
@@ -78,17 +79,16 @@ const TrainingSection = () => {
             ))}
           </div>
 
-          <Button
-            size={"lg"}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold"
-          >
-            Apply For Training <ArrowRight />
-          </Button>
+          <Link href={"/sign-up?role=career"}>
+            <Button size={"lg"}>
+              Apply Now - For Free ! <ArrowRight />
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side: Stats Card */}
-        <div className="   grid grid-cols-2 gap-5 p-2 ">
-          <Card className=" bg-[#1e7344] text-white">
+        <div className="   grid grid-cols-1 md:grid-cols-2 gap-5 p-2 ">
+          <Card className=" bg-primary text-white">
             <CardHeader>
               <h2>Week 1</h2>
               <CardTitle className="font-bold text-xl">
@@ -172,7 +172,7 @@ const TrainingSection = () => {
               </p>
             </CardContent>
           </Card>{" "}
-          <Card className="bg-[#1e7344] text-white">
+          <Card className="bg-primary text-white">
             <CardHeader>
               <h2>Week 4</h2>
               <CardTitle className="font-bold text-xl">

@@ -4,6 +4,7 @@ import TrainingSection from "@/components/Training/TrainingSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -22,9 +23,11 @@ const page = () => {
           Mechanic and drive the change towards sustainable mobility!
         </p>
 
-        <Button className="md:mt-10" size={"lg"}>
-          Apply Now - For Free ! <ArrowRight />
-        </Button>
+        <Link href={"/sign-up?role=career"}>
+          <Button className="md:mt-10" size={"lg"}>
+            Apply Now - For Free ! <ArrowRight />
+          </Button>
+        </Link>
       </section>
       <Features />
       <Separator />

@@ -15,6 +15,7 @@ import {
   DollarSign,
   ClipboardCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 const SaccosSection = () => {
   const benefits = [
@@ -75,16 +76,15 @@ const SaccosSection = () => {
             ))}
           </div>
 
-          <Button
-            size={"lg"}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold"
-          >
-            Partner as A Dealer <ArrowRight />
-          </Button>
+          <Link href={"/sign-up?role=sacco"}>
+            <Button className="mt-6" size={"lg"}>
+              Partner With Us <ArrowRight />
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side: Stats Card */}
-        <Card className="bg-[#1e7344] border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
+        <Card className="bg-primary border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
           <div className="text-center space-y-2 flex flex-col items-center">
             <ClipboardCheck
               className="text-8xl font-black text-center"

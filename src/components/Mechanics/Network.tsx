@@ -8,6 +8,7 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const JoinNetwork = () => {
   const benefits = [
@@ -67,16 +68,18 @@ const JoinNetwork = () => {
             ))}
           </div>
 
-          <Button
-            size={"lg"}
-            className="bg-primary hover:bg-primary/90 text-white font-semibold"
-          >
-            Apply to Join <ArrowRight />
-          </Button>
+          <Link href="/sign-up/?role=mechanic">
+            <Button
+              size={"lg"}
+              className="bg-primary hover:bg-primary/90 text-white font-semibold"
+            >
+              Apply to Join <ArrowRight />
+            </Button>
+          </Link>
         </div>
 
         {/* Right Side: Stats Card */}
-        <Card className="bg-[#1e7344] border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
+        <Card className="bg-primary border-none rounded-[2.5rem] p-10 lg:p-16 text-white flex flex-col items-center justify-center shadow-2xl">
           <div className="text-center space-y-2">
             <span className="text-8xl font-black">0</span>
             <h3 className="text-2xl font-bold">Joining Fee</h3>

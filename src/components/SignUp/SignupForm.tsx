@@ -7,22 +7,62 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 export function SignupForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SignupFormContent className={className} {...props} />
+    </Suspense>
+  );
+}
+
+function SignupFormContent({
+  className,
+  ...props
+}: React.ComponentProps<"div">) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const searchParams = useSearchParams();
+  const role = searchParams.get("role") || "user";
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  const roleConfig: Record<string, { title: string; subtitle: string }> = {
+    rider: {
+      title: "Rider Sign Up",
+      subtitle: "Start your journey with Sycamore Care.",
+    },
+    sacco: {
+      title: "Sacco Registration",
+      subtitle: "Manage your fleet's maintenance.",
+    },
+    dealership: {
+      title: "Partner Dealership",
+      subtitle: "Join our e-mobility network.",
+    },
+    career: {
+      title: "Join Our Team",
+      subtitle: "Help us build the future of mobility.",
+    },
+    user: {
+      title: "Welcome to Sycamore Inc.",
+      subtitle: "Create your account to get started.",
+    },
+  };
+
+  const { title, subtitle } = roleConfig[role] || roleConfig.user;
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form>
+        <input type="hidden" name="role" value={role} />
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
             <a
@@ -45,7 +85,7 @@ export function SignupForm({
               </div>
               <span className="sr-only">Sycamore Inc.</span>
             </a>
-            <h1 className="text-xl font-bold">Welcome to Sycamore Inc.</h1>
+            <h1 className="text-xl font-bold">{title}</h1>
             <div className="text-center text-sm">
               Do you have an account?{" "}
               <Link href="/login" className="underline underline-offset-4">
@@ -89,9 +129,18 @@ export function SignupForm({
                 required
               />
             </div>
+            <div className="grid gap-3">
+              <Label htmlFor="location">Location</Label>
+              <Input
+                id="location"
+                type="text"
+                placeholder="eg. Nairobi, Mombasa, Kisumu..."
+                required
+              />
+            </div>
           </div>
           <Button type="submit" className="w-full">
-            Sign Up
+            Sign Up as {role.charAt(0).toUpperCase() + role.slice(1)}
           </Button>
           <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
             <span className="bg-background text-muted-foreground relative z-10 px-2">

@@ -10,10 +10,10 @@ import {
   Check,
   ExternalLink,
   Handshake,
-  Link,
   UserPen,
 } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -37,17 +37,19 @@ const RidePage = () => {
           labor, and spare parts. No surprise bills. No begging for soft loans.
           Just ride, earn, and go home to your family with your full pocket.
         </p>
-        <div className="space-x-4">
-          <Button className="" size={"lg"}>
-            Start your Coverage
-          </Button>
+        <div className="space-x-4 flex">
+          <Link href="/sign-up/?role=rider">
+            <Button className="" size={"lg"}>
+              Start your Coverage
+            </Button>
+          </Link>
           <Button size={"lg"} variant={"outline"} className="">
             See Pricing <ExternalLink />
           </Button>
         </div>
       </section>
       <Features />
-      <Card className="bg-primary/75 flex flex-col items-center gap-6 py-12">
+      <Card className="bg-primary flex flex-col items-center gap-6 py-12">
         <h1 className="text-center text-2xl font-bold text-white">
           Just KES 100 Per Day
         </h1>
@@ -55,7 +57,7 @@ const RidePage = () => {
           That's less than a cup of coffee. Join thousands of riders who ride
           worry-free knowing they're always covered.
         </p>
-        <section className="flex gap-5 items-center text-sm">
+        <section className="flex gap-5 items-center text-sm text-white">
           <div className="flex gap-2">
             <Check className="text-primary" />
             No Hidden Fees
