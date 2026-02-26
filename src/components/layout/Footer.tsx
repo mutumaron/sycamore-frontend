@@ -129,7 +129,7 @@ const Footer = () => {
       <Separator />
 
       <p className="cursor-pointer py-4 text-center text-muted-foreground">
-        &copy; 2025 Sycamore,co.{" "}
+        &copy; 2026 Sycamore Dynamics,co.{" "}
         <span className="hover:text-primary">
           <a
             href="https://onyx-devs.vercel.app/"

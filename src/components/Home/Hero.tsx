@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="relative flex justify-center w-full">
       <div className="flex flex-col items-center gap-5">
         <OperationCard
-          title="Kenya's First E-Bike Maintenance Network"
+          title="E-Bike Maintenance Network"
           color="text-primary"
         />
         <div className="mt-6 flex flex-col items-center gap-5">
@@ -26,12 +26,12 @@ const Hero = () => {
             ride
           </p>
           <div className="space-x-5">
-            <Link href={"/sycamore-ride"}>
+            <Link href={"/sign-up?role=rider"}>
               <Button className="rounded-md mt-4 cursor-pointer">
                 Start Riding Worry-Free
               </Button>
             </Link>
-            <Link href={"/sycamore-ride"}>
+            <Link href={"/sign-up?role=mechanic"}>
               <Button
                 className="rounded-md mt-4 cursor-pointer hover:text-primary"
                 variant={"outline"}

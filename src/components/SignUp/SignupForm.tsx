@@ -43,13 +43,17 @@ function SignupFormContent({
       title: "Sacco Registration",
       subtitle: "Manage your fleet's maintenance.",
     },
+    mechanic: {
+      title: "Mechanic Sign Up",
+      subtitle: "Join our network of certified mechanics  .",
+    },
     dealership: {
       title: "Partner Dealership",
       subtitle: "Join our e-mobility network.",
     },
     career: {
-      title: "Join Our Team",
-      subtitle: "Help us build the future of mobility.",
+      title: "Join Our Program",
+      subtitle: "Help us build your future in E-mobility.",
     },
     user: {
       title: "Welcome to Sycamore Inc.",
@@ -65,8 +69,8 @@ function SignupFormContent({
         <input type="hidden" name="role" value={role} />
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="flex flex-col items-center gap-2 font-medium"
             >
               <div className="flex size-8 items-center justify-center rounded-md">
@@ -84,7 +88,7 @@ function SignupFormContent({
                 )}
               </div>
               <span className="sr-only">Sycamore Inc.</span>
-            </a>
+            </Link>
             <h1 className="text-xl font-bold">{title}</h1>
             <div className="text-center text-sm">
               Do you have an account?{" "}

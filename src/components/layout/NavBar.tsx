@@ -23,8 +23,8 @@ const NavBar = () => {
           <Image
             src={
               resolvedTheme === "dark"
-                ? "/images/logo-1-dark.svg"
-                : "/images/sycamore-logo.svg"
+                ? "/images/sycamore dynamics-10.svg"
+                : "/images/sycamore dynamics-dark.svg"
             }
             height={100}
             width={100}

@@ -25,8 +25,8 @@ export function LoginForm({
       <form>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col items-center gap-2">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="flex flex-col items-center gap-2 font-medium"
             >
               <div className="flex size-8 items-center justify-center rounded-md">
@@ -44,7 +44,7 @@ export function LoginForm({
                 )}
               </div>
               <span className="sr-only">Sycamore Inc.</span>
-            </a>
+            </Link>
             <h1 className="text-xl font-bold">Welcome to Sycamore Inc.</h1>
             <div className="text-center text-sm">
               Don&apos;t have an account?{" "}
